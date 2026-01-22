@@ -3,7 +3,7 @@
 A command-line Java dictionary application that reads and parses word definitions from a markdown file.
 
 ## About
-This project is currently **Version 1 (v1.0)** of the Java Dictionary.  
+This project is currently in the **Version 1.x** stage of development.
 The goal of this version is to establish a stable, file-based dictionary system with basic lookup functionality.
 
 The application:
@@ -14,8 +14,9 @@ The application:
 ## Versioning
 This repository will evolve over time.
 
-- **v1.0**: Basic CLI dictionary with file parsing
-- Future versions will introduce new features, refactoring, and improvements
+- **v1.0**: Initial CLI dictionary with file-based parsing
+- **v1.1**: Minor internal improvements and stability updates
+- Future versions will introduce new features, refactoring, and enhancements
 
 Each version will be committed incrementally to reflect learning progress and feature growth.
 
