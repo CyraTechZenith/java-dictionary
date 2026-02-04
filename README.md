@@ -21,11 +21,11 @@ This repository will evolve over time.
 Each version will be committed incrementally to reflect learning progress and feature growth.
 
 ## Data File Notice
-The current markdown dictionary file is **temporary** and used for development and testing purposes.
+The current markdown dictionary file represents a **stable baseline** for the project and is actively used by the application.
 
-- Its structure and content may change
-- It will be updated or replaced as features evolve
-- Future versions may support different formats or improved parsing logic
+- Its structure and content may evolve incrementally in future versions
+- Updates will focus on expansion or refinement rather than replacement
+- Future versions may support additional formats or enhanced parsing logic
 
 ## How to Run
 1. Compile the Java files
