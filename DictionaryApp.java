@@ -66,9 +66,9 @@ public class DictionaryApp {
                 line = line.trim();
 
                 // Marker detection:
-                int markerIndex1 = line.indexOf("\\### ");
-                int markerIndex2 = line.indexOf("Definition:");
-                int markerIndex3 = line.indexOf("Example:");
+                int markerIndex1 = line.indexOf("### ");
+                int markerIndex2 = line.indexOf("Definition: ");
+                int markerIndex3 = line.indexOf("Example: ");
 
                 // WORD marker encountered → previous entry ends
                 if (markerIndex1 != -1) {
@@ -81,7 +81,7 @@ public class DictionaryApp {
                     }
 
                     // Start a new entry
-                    currentWord = line.substring(markerIndex1 + 5).trim();
+                    currentWord = line.substring(markerIndex1 + 4).trim();
                     currentDefinition = null;
                     currentExample = null;
                 }
@@ -182,9 +182,10 @@ public class DictionaryApp {
         for (DictionaryEntry entry : dictionary.values()) {
             System.out.println(count + ". " + entry.getWord());
             System.out.println(entry.getDefinition());
-            System.out.println(entry.getExample());
+            System.out.println("Ex: " + entry.getExample());
             System.out.println();
             System.out.println("------------------");
+            System.out.println();
             count++;
         }
     }
